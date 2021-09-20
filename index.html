@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Contact US Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="contact">
+    <div class="contact__content">
+        <h2>Contact Us</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum deleniti deserunt distinctio ea eaque
+            enim, eum mollitia placeat, quam quas quisquam repellendus voluptate? Accusamus adipisci harum omnis
+            praesentium totam!
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="contact__contactInfo">
+            <div class="contact__contactInfo__box">
+                <div class="contact__contactInfo__box__icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="contact__contactInfo__box__text">
+                    <h3>Address</h3>
+                    <p>4671 Sugar Camp Road, <br> Owatonna, Minnesota, <br>55060</p>
+                </div>
+            </div>
+
+            <div class="contact__contactInfo__box">
+                <div class="contact__contactInfo__box__icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="contact__contactInfo__box__text">
+                    <h3>Phone</h3>
+                    <p>507-475-6092</p>
+                </div>
+            </div>
+
+            <div class="contact__contactInfo__box">
+                <div class="contact__contactInfo__box__icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <div class="contact__contactInfo__box__text">
+                    <h3>Email</h3>
+                    <p>user@email.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__contactForm">
+            <form action="#">
+                <h2>Send Message</h2>
+
+                <div class="contact__contactForm__inputBox">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" required="required"/>
+                    <span>Full Name</span>
+                </div>
+
+                <div class="contact__contactForm__inputBox">
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" required="required"/>
+                    <span>Email</span>
+                </div>
+
+                <div class="contact__contactForm__inputBox">
+                    <label for="message"></label>
+                    <textarea required="required" name="message" id="message"></textarea>
+                    <span>Type your Message...</span>
+                </div>
+
+                <div class="contact__contactForm__inputBox">
+                    <label for="send"></label>
+                    <input type="submit" name="send" value="send" id="Send"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #eee;
+
+  &__content {
+    max-width: 800px;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    p {
+      font-weight: 300;
+      color: #000;
+    }
+  }
+
+  &__contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    &__box {
+      position: relative;
+      padding: 20px 0;
+      display: flex;
+
+      &__icon {
+        min-width: 60px;
+        height: 60px;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #000;
+        font-weight: 300;
+
+        h3 {
+          color: #4013B0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__contactForm {
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+
+    h2 {
+      font-size: 30px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    &__inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+
+      span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: .5s;
+        color: #666;
+      }
+
+      input[type="submit"] {
+        width: 100px;
+        background: #6AA3E9;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        outline: none;
+        resize: none;
+
+        &:focus ~ span, &:valid ~ span{
+          color: #6AA3E9;
+          font-size: 12px;
+          transform: translateY(-20px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+
+    &__contactForm, &__contactInfo {
+      width: 100%;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
